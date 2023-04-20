@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_pain" maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.herewegoagain.Controller">
+   <children>
+      <VBox fx:id="vbox" maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="305.0">
+               <children>
+                  <Button fx:id="Undo" mnemonicParsing="false" onAction="#Undo" prefHeight="100.0" prefWidth="76.25" style="-fx-background-color: WHITE;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Restart" mnemonicParsing="false" onAction="#Restart" prefHeight="141.0" prefWidth="76.25" style="-fx-background-color: Orange;" textFill="WHITE">
+                     <font>
+                        <Font name="Century Gothic" size="15.0" />
+                     </font>
+                  </Button>
+                  <VBox prefHeight="100.0" prefWidth="152.5">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="152.5" text="           Score" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="score" prefHeight="75.0" prefWidth="152.5">
+                           <font>
+                              <Font name="Tw Cen MT" size="51.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Pane fx:id="Pole" maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
